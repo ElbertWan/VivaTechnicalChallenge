@@ -88,7 +88,6 @@ const TextFieldWithButton: FunctionComponent<TextFieldWithButtonProps> = ({
               setFieldValue(e.target.value);
             }}
           />
-          {hasError && <ErrorText>Error: {errorText}</ErrorText>}
         </TextWrapper>
         <CustomButton
           style={ButtonStyle.Secondary}
@@ -99,6 +98,7 @@ const TextFieldWithButton: FunctionComponent<TextFieldWithButtonProps> = ({
           hovercolour="#2e333a"
         />
       </VoucherApplicationBox>
+      {hasError && <ErrorText>Error: {errorText}</ErrorText>}
     </>
   );
 };
