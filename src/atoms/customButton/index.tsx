@@ -43,6 +43,11 @@ const PrimaryButton = styled.button<{
     background-color: #cccccc;
     color: #666666;
   }
+  &:active {
+    opacity: 0.8;
+    border: none;
+    outline: none;
+  }
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -84,6 +89,11 @@ const SecondaryButton = styled.button<{
   &:disabled {
     background-color: #cccccc;
     color: #666666;
+  }
+  &:active {
+    opacity: 0.8;
+    border: none;
+    outline: none;
   }
   @media (max-width: 768px) {
     width: 100%;
